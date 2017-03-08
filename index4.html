@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="//cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
+ <!--   <link rel="stylesheet" href="./weui.css">
+    <link rel="stylesheet" href="./example.css">-->
+</head>
+<body><!-- ng-app="app"  ng-controller="ctrl"-->
+
+<div class="page__bd">
+
+
+    <div class="weui-cells__title">看海商城订货系统</div>
+
+
+
+    <div class="weui-cells weui-cells_form">
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label">请输入密码</label></div>
+            <div class="weui-cell__bd">
+                <input id="mima"  class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入密码">
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <div class="weui-cells__tips">Copyright © 2015-2017 看海商城 版权所有</div>
+
+
+    <div class="weui-btn-area">
+        <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips" onclick="panduan()">确定</a>
+    </div>
+</div>
+</body>
+<script>
+    function panduan() {
+        var mima = document.getElementById("mima").value;
+
+        if (mima == "123456"){
+
+            window.location.href = "https://h5.youzan.com/v2/feature/1i311ocz5?winzoom=1&redirect_count=1";
+        } else {
+            alert('密码错误，请联系熊大！');
+        }
+    }
+
+
+
+
+
+
+   /* $(function(){
+        $('#exampleModal').modal('show');
+    })
+    var app=angular.module('app',[]);
+    app.controller('ctrl',function($scope){
+        //$scope.pwd="";
+        $scope.errormag="";
+        $scope.login=function(){
+            console.log($scope.pwd);
+            if($scope.pwd=="123456"){
+                $('#exampleModal').modal('hide');
+                //alert('验证通过！即将跳转到百度。。。');
+                window.location.href="https://h5.youzan.com/v2/feature/1i311ocz5?winzoom=1&redirect_count=1"
+            }else{$scope.errormag='密码错误！请联系熊大！'}
+        }
+    })*/
+</script>
+</html>
